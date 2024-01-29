@@ -1,5 +1,6 @@
 module.exports = {
   content: ['./*.html'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -12,8 +13,8 @@ module.exports = {
         lightRed: 'hsl(0, 100%, 63%)',
       },
       fontFamily: {
-        sans: ['Raleway', 'sans-serif'],
-        opensans: ['Open Sans', 'sans-serif']
+        sans: ['Fig Tree', 'sans-serif'],
+        opensans: ['Fira Sans', 'sans-serif']
       },
       backgroundImage: (theme) => ({
         'logo-dark-mode': "url('../images/logo-dark-mode.svg')",
