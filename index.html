@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,19 +7,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      if (
+        localStorage.getItem('color-theme') === 'dark' ||
+        (!('color-theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <script src="js/script.js" defer></script>
     <title>Fylo Project</title>
   </head>
-  <body class = "dark:bg-darkBlue dark:text-white font-opensans">
+  <body class = "bg-yellow-200 text-red-900 dark:bg-red-900 dark:text-yellow-200 font-opensans">
     <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
       <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10">
       </div>
-      <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
-        <a href="#features" class="hover:text-accentCyan">Features</a>
+      <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10 font-bold">
         <a href="#projects" class="hover:text-accentCyan">Projects</a>
-        <button id="theme-toggle" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus-gray-200 dark:focus:ring-gray-700 rounded-large text-sm p-2 5">
+        <a href="#tutorials" class="hover:text-accentCyan">Tutorials</a>
+        <button id="theme-toggle" class="text-red-900 dark:text-yellow-200 hover:bg-black  focus:outline-none focus:ring-2 focus-red-900 focus:ring-accentCyan  rounded-full text-sm p-2 5">
           <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -34,5 +46,15 @@
         </button>
       </div>
     </header>
+    <section id="hero" class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-container bg-bottom">
+      <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
+        <img src="images/illustration-intro.png" alt="" class="mx-auto">
+        <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">Delivering coding solutions and guides for your needs.</h1> 
+        <p class="max-w-xs mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+          NimiraTech presents Filo, our online Learning Hub for Web Developers.
+          Our guides and project ideas aim to teach you everthing you need to know to become a professional coder.
+        </p>       
+      </div>
+    </section>
   </body>
 </html>
