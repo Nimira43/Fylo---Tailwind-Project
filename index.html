@@ -24,14 +24,14 @@
     <script src="js/script.js" defer></script>
     <title>Fylo Project</title>
   </head>
-  <body class = "bg-yellow-200 text-red-900 dark:bg-red-900 dark:text-yellow-200 font-opensans">
+  <body class = "bg-yellow-100 text-red-900 dark:bg-red-900 dark:text-yellow-100 font-opensans">
     <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
       <div class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10">
       </div>
       <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10 font-bold">
         <a href="#projects" class="hover:text-accentCyan">Projects</a>
         <a href="#tutorials" class="hover:text-accentCyan">Tutorials</a>
-        <button id="theme-toggle" class="text-red-900 dark:text-yellow-200 hover:bg-black  focus:outline-none focus:ring-2 focus-red-900 focus:ring-accentCyan  rounded-full text-sm p-2 5">
+        <button id="theme-toggle" class="text-red-900 dark:text-yellow-100 hover:bg-black focus:outline-none focus:ring-2 focus-red-900 focus:ring-accentCyan  rounded-full text-sm p-2 5">
           <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -50,10 +50,55 @@
       <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
         <img src="images/illustration-intro.png" alt="" class="mx-auto">
         <h1 class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">Delivering coding solutions and guides for your needs.</h1> 
-        <p class="max-w-xs mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
+        <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg font-semibold">
           NimiraTech presents Filo, our online Learning Hub for Web Developers.
           Our guides and project ideas aim to teach you everthing you need to know to become a professional coder.
         </p>       
+        <button class="p-3 rounded-full w-52 bg-red-900 text-yellow-100 font-bold hover:scale-95 dark:bg-yellow-100 dark:text-red-900">Read More</button>      
+      </div>
+    </section>
+    <section id="features" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
+      <div class="container mx-auto px-6 pb">
+        <div class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0">
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-access-anywhere.svg" alt="">
+            </div>
+            <h3 class="text-xl font-bold">Access to online labs</h3>
+            <p class="max-w-md font-semibold">
+              Whether you're using your computer, phone or tablet our labs are available to you at home, work or on the go.
+            </p>  
+          </div>
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-security.svg" alt="">
+            </div>
+            <h3 class="text-xl font-bold">CompTIA Tutorials</h3>
+            <p class="max-w-md font-semibold">
+              We have excellent courses and labs to help with your studies for CompTIA's A +, Network +, Security + and PenTest +. We'll get you certified.  
+            </p>  
+          </div>
+        </div>
+        <div class="flex flex-col space-y-24 mt-28 text-center md:flex-row md:space-y-0">
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-collaboration.svg" alt="">
+            </div>
+            <h3 class="text-xl font-bold">Working with Others</h3>
+            <p class="max-w-md font-semibold">
+              Our Projects section allows you to partner up with others to create your Team Projects with help from our experts.
+            </p>  
+          </div>
+          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/icon-any-file.svg" alt="">
+            </div>
+            <h3 class="text-xl font-bold">Web Hosting</h3>
+            <p class="max-w-md font-semibold">
+              Whilst you study we'll provide you with free Web Hosting. When you're ready for production we'll offer you reasonable rates to host your sites.  
+            </p>  
+          </div>
+        </div>
       </div>
     </section>
   </body>
