@@ -1,2 +1,2 @@
 Normally I try to customise any project I do based off lectures. However in this case I'm using Fylo assets and developing my knowledge of Tailwind. For this project I follow closely to Brad's code. I've changed the main font and altered some css but that is about it with my own customisation.
-Update - I've made quite a few changes with the Testimonials section and not used any of the provided assets. The result is quite different from Brad's original code.
+Update - I've made quite a few changes with the later sections and not used any of the provided assets for the Testimonial section. The result is quite different from Brad's original code.
